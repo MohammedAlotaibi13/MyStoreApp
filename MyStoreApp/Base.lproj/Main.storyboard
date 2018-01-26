@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="weJ-Wu-evY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8c-AX-8Zt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                                     <navigationItem title="List" id="DRd-vo-5cK">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lZT-GU-ctV">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="slI-LF-wwi"/>
+                                                <segue destination="weJ-Wu-evY" kind="show" id="iQw-z5-rHG"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -61,15 +61,19 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-add-image-50" translatesAutoresizingMaskIntoConstraints="NO" id="5D7-tn-Ecb">
-                                                            <rect key="frame" x="77" y="32" width="191" height="105"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-add-image-50" translatesAutoresizingMaskIntoConstraints="NO" id="5D7-tn-Ecb">
+                                                            <rect key="frame" x="77" y="32" width="115" height="105"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="105" id="EUL-0d-qXo"/>
+                                                                <constraint firstAttribute="width" constant="191" id="XVz-Oc-mgN"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-Lp-dRe">
-                                                            <rect key="frame" x="77" y="145" width="191" height="25"/>
+                                                            <rect key="frame" x="77" y="145" width="207" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="25" id="oIv-UO-f9R"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -162,11 +166,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-vm-xB1">
-                                <rect key="frame" x="155" y="306" width="64" height="64"/>
+                                <rect key="frame" x="155" y="318" width="65" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.23257251270000001" blue="0.10746303290000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="4wX-SU-pfW"/>
-                                    <constraint firstAttribute="width" constant="64" id="bhY-Sw-qpO"/>
+                                    <constraint firstAttribute="width" constant="65" id="aqk-j6-GoX"/>
+                                    <constraint firstAttribute="height" constant="30" id="tCy-FQ-50s"/>
                                 </constraints>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,15 +182,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0EO-vm-xB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="B4I-sf-64q"/>
                             <constraint firstItem="FrZ-Py-gPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GhD-4X-8RU"/>
-                            <constraint firstItem="0EO-vm-xB1" firstAttribute="top" secondItem="FrZ-Py-gPh" secondAttribute="bottom" constant="162" id="IIw-CA-cEg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0EO-vm-xB1" secondAttribute="trailing" constant="156" id="L37-59-UbC"/>
                             <constraint firstItem="waI-n4-f8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Llr-l1-vyE"/>
+                            <constraint firstItem="0EO-vm-xB1" firstAttribute="top" secondItem="FrZ-Py-gPh" secondAttribute="bottom" constant="174" id="MUP-Um-OQr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FrZ-Py-gPh" secondAttribute="trailing" constant="16" id="Xx4-VX-Qir"/>
                             <constraint firstItem="waI-n4-f8J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="khd-e3-Cg8"/>
                             <constraint firstItem="FrZ-Py-gPh" firstAttribute="top" secondItem="waI-n4-f8J" secondAttribute="bottom" constant="50" id="kp2-j3-O2j"/>
                             <constraint firstItem="waI-n4-f8J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pB0-0n-rp9"/>
+                            <constraint firstItem="0EO-vm-xB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="r5I-kb-3Mt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -294,7 +297,4 @@
     <resources>
         <image name="icons8-add-image-50" width="50" height="50"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="slI-LF-wwi"/>
-    </inferredMetricsTieBreakers>
 </document>

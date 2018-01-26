@@ -9,15 +9,16 @@
 import UIKit
 import CoreData
 
-class MainPageTableViewController: UITableViewController {
+class MainPageTableViewController: UIViewController , UITabBarDelegate , UITableViewDataSource {
     
     @IBOutlet weak var tableview: UITableView!
     var itemList = [Items]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadItem()
+      loadItem()
     }
 
+    
     func loadItem(){
         
         let fr : NSFetchRequest<Items> = Items.fetchRequest()
@@ -31,22 +32,24 @@ class MainPageTableViewController: UITableViewController {
     
     // tableView
    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return itemList.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let item = itemList[indexPath.row]
         cell.itemName.text = item.item_name
         cell.storeName.text = item.toStoreType?.store_name
         cell.imageItem.image = item.image as? UIImage
-       
+        print(item.date_create)
         // implement date
         let date = DateFormatter()
-        date.dateFormat
+        date.dateFormat = "MM/DD/yy h:mm a"
+        cell.dateLabel.text = date.string(from: item.date_create as! Date)
+        
         return cell
     }
     

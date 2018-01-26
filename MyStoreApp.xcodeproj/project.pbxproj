@@ -15,6 +15,7 @@
 		8B2AA313201BA8D80024FE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AA311201BA8D80024FE13 /* LaunchScreen.storyboard */; };
 		8B2AA31B201BB4630024FE13 /* AddItemsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AA31A201BB4630024FE13 /* AddItemsViewViewController.swift */; };
 		8B2AA31D201BD22C0024FE13 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AA31C201BD22C0024FE13 /* TableViewCell.swift */; };
+		8B2AA31F201BD6890024FE13 /* MainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AA31E201BD6890024FE13 /* MainPageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8B2AA314201BA8D80024FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2AA31A201BB4630024FE13 /* AddItemsViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsViewViewController.swift; sourceTree = "<group>"; };
 		8B2AA31C201BD22C0024FE13 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8B2AA31E201BD6890024FE13 /* MainPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8B2AA305201BA8D80024FE13 /* AppDelegate.swift */,
 				8B2AA307201BA8D80024FE13 /* ViewController.swift */,
 				8B2AA309201BA8D80024FE13 /* Main.storyboard */,
+				8B2AA31E201BD6890024FE13 /* MainPageTableViewController.swift */,
 				8B2AA31C201BD22C0024FE13 /* TableViewCell.swift */,
 				8B2AA31A201BB4630024FE13 /* AddItemsViewViewController.swift */,
 				8B2AA30F201BA8D80024FE13 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				8B2AA31D201BD22C0024FE13 /* TableViewCell.swift in Sources */,
 				8B2AA31B201BB4630024FE13 /* AddItemsViewViewController.swift in Sources */,
 				8B2AA30E201BA8D80024FE13 /* MyStoreApp.xcdatamodeld in Sources */,
+				8B2AA31F201BD6890024FE13 /* MainPageTableViewController.swift in Sources */,
 				8B2AA308201BA8D80024FE13 /* ViewController.swift in Sources */,
 				8B2AA306201BA8D80024FE13 /* AppDelegate.swift in Sources */,
 			);
